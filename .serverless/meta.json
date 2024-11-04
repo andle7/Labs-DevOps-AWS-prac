@@ -1,0 +1,498 @@
+{
+  "C:\\dev\\1\\Labs-DevOps-AWS-prac": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.7",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "opt": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "task-user-service",
+            "frameworkVersion": "4",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs20.x",
+              "region": "us-east-1",
+              "stage": "dev",
+              "iam": {
+                "role": {
+                  "statements": [
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "logs:CreateLogGroup",
+                        "logs:CreateLogStream",
+                        "logs:PutLogEvents"
+                      ],
+                      "Resource": "*"
+                    }
+                  ]
+                }
+              },
+              "versionFunctions": true
+            },
+            "functions": {
+              "taskService": {
+                "handler": "TaskService/index.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/tasks",
+                      "method": "get",
+                      "cors": true
+                    }
+                  },
+                  {
+                    "http": {
+                      "path": "/tasks",
+                      "method": "post",
+                      "cors": true
+                    }
+                  }
+                ],
+                "environment": {
+                  "STAGE": "dev"
+                },
+                "name": "task-user-service-dev-taskService"
+              },
+              "userService": {
+                "handler": "UserService/index.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/users",
+                      "method": "get",
+                      "cors": true
+                    }
+                  },
+                  {
+                    "http": {
+                      "path": "/users",
+                      "method": "post",
+                      "cors": true
+                    }
+                  }
+                ],
+                "environment": {
+                  "STAGE": "dev"
+                },
+                "name": "task-user-service-dev-userService"
+              }
+            },
+            "resources": {
+              "Resources": {
+                "GatewayResponseDefault4XX": {
+                  "Type": "AWS::ApiGateway::GatewayResponse",
+                  "Properties": {
+                    "ResponseParameters": {
+                      "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                      "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+                    },
+                    "ResponseType": "DEFAULT_4XX",
+                    "RestApiId": {
+                      "Ref": "ApiGatewayRestApi"
+                    }
+                  }
+                },
+                "GatewayResponseDefault5XX": {
+                  "Type": "AWS::ApiGateway::GatewayResponse",
+                  "Properties": {
+                    "ResponseParameters": {
+                      "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                      "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+                    },
+                    "ResponseType": "DEFAULT_5XX",
+                    "RestApiId": {
+                      "Ref": "ApiGatewayRestApi"
+                    }
+                  }
+                }
+              }
+            },
+            "custom": {
+              "stages": {
+                "dev": {
+                  "logLevel": "DEBUG"
+                },
+                "prod": {
+                  "logLevel": "ERROR"
+                }
+              }
+            },
+            "plugins": [
+              "serverless-offline"
+            ],
+            "package": {
+              "patterns": [
+                "!node_modules/**",
+                "!.git/**"
+              ],
+              "artifactsS3KeyDirname": "serverless/task-user-service/dev/code-artifacts"
+            }
+          },
+          "configFileDirPath": "C:\\dev\\1\\Labs-DevOps-AWS-prac",
+          "config": {
+            "type": "opt"
+          },
+          "options": {
+            "function": "taskService",
+            "tail": true
+          },
+          "logger": {
+            "namespace": "s:core:resolver:opt",
+            "prefix": null,
+            "prefixColor": null
+          },
+          "_credentialsPromise": "<REDACTED>"
+        },
+        "resolvers": {}
+      },
+      "default-aws-credential-resolver": "<REDACTED>",
+      "self": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "task-user-service",
+            "frameworkVersion": "4",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs20.x",
+              "region": "us-east-1",
+              "stage": "dev",
+              "iam": {
+                "role": {
+                  "statements": [
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "logs:CreateLogGroup",
+                        "logs:CreateLogStream",
+                        "logs:PutLogEvents"
+                      ],
+                      "Resource": "*"
+                    }
+                  ]
+                }
+              },
+              "versionFunctions": true
+            },
+            "functions": {
+              "taskService": {
+                "handler": "TaskService/index.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/tasks",
+                      "method": "get",
+                      "cors": true
+                    }
+                  },
+                  {
+                    "http": {
+                      "path": "/tasks",
+                      "method": "post",
+                      "cors": true
+                    }
+                  }
+                ],
+                "environment": {
+                  "STAGE": "dev"
+                },
+                "name": "task-user-service-dev-taskService"
+              },
+              "userService": {
+                "handler": "UserService/index.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/users",
+                      "method": "get",
+                      "cors": true
+                    }
+                  },
+                  {
+                    "http": {
+                      "path": "/users",
+                      "method": "post",
+                      "cors": true
+                    }
+                  }
+                ],
+                "environment": {
+                  "STAGE": "dev"
+                },
+                "name": "task-user-service-dev-userService"
+              }
+            },
+            "resources": {
+              "Resources": {
+                "GatewayResponseDefault4XX": {
+                  "Type": "AWS::ApiGateway::GatewayResponse",
+                  "Properties": {
+                    "ResponseParameters": {
+                      "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                      "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+                    },
+                    "ResponseType": "DEFAULT_4XX",
+                    "RestApiId": {
+                      "Ref": "ApiGatewayRestApi"
+                    }
+                  }
+                },
+                "GatewayResponseDefault5XX": {
+                  "Type": "AWS::ApiGateway::GatewayResponse",
+                  "Properties": {
+                    "ResponseParameters": {
+                      "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                      "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+                    },
+                    "ResponseType": "DEFAULT_5XX",
+                    "RestApiId": {
+                      "Ref": "ApiGatewayRestApi"
+                    }
+                  }
+                }
+              }
+            },
+            "custom": {
+              "stages": {
+                "dev": {
+                  "logLevel": "DEBUG"
+                },
+                "prod": {
+                  "logLevel": "ERROR"
+                }
+              }
+            },
+            "plugins": [
+              "serverless-offline"
+            ],
+            "package": {
+              "patterns": [
+                "!node_modules/**",
+                "!.git/**"
+              ],
+              "artifactsS3KeyDirname": "serverless/task-user-service/dev/code-artifacts"
+            }
+          },
+          "configFileDirPath": "C:\\dev\\1\\Labs-DevOps-AWS-prac",
+          "config": {
+            "type": "self"
+          },
+          "options": {
+            "function": "taskService",
+            "tail": true
+          },
+          "stage": "dev",
+          "dashboard": null,
+          "logger": {
+            "namespace": "s:core:resolver:self",
+            "prefix": null,
+            "prefixColor": null
+          },
+          "_credentialsPromise": "<REDACTED>"
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "C:\\dev\\1\\Labs-DevOps-AWS-prac",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "task-user-service",
+      "frameworkVersion": "4",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs20.x",
+        "region": "us-east-1",
+        "stage": "dev",
+        "iam": {
+          "role": {
+            "statements": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "logs:CreateLogGroup",
+                  "logs:CreateLogStream",
+                  "logs:PutLogEvents"
+                ],
+                "Resource": "*"
+              }
+            ]
+          }
+        },
+        "versionFunctions": true
+      },
+      "functions": {
+        "taskService": {
+          "handler": "TaskService/index.handler",
+          "events": [
+            {
+              "http": {
+                "path": "/tasks",
+                "method": "get",
+                "cors": true
+              }
+            },
+            {
+              "http": {
+                "path": "/tasks",
+                "method": "post",
+                "cors": true
+              }
+            }
+          ],
+          "environment": {
+            "STAGE": "dev"
+          },
+          "name": "task-user-service-dev-taskService"
+        },
+        "userService": {
+          "handler": "UserService/index.handler",
+          "events": [
+            {
+              "http": {
+                "path": "/users",
+                "method": "get",
+                "cors": true
+              }
+            },
+            {
+              "http": {
+                "path": "/users",
+                "method": "post",
+                "cors": true
+              }
+            }
+          ],
+          "environment": {
+            "STAGE": "dev"
+          },
+          "name": "task-user-service-dev-userService"
+        }
+      },
+      "resources": {
+        "Resources": {
+          "GatewayResponseDefault4XX": {
+            "Type": "AWS::ApiGateway::GatewayResponse",
+            "Properties": {
+              "ResponseParameters": {
+                "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+              },
+              "ResponseType": "DEFAULT_4XX",
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              }
+            }
+          },
+          "GatewayResponseDefault5XX": {
+            "Type": "AWS::ApiGateway::GatewayResponse",
+            "Properties": {
+              "ResponseParameters": {
+                "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+                "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+              },
+              "ResponseType": "DEFAULT_5XX",
+              "RestApiId": {
+                "Ref": "ApiGatewayRestApi"
+              }
+            }
+          }
+        }
+      },
+      "custom": {
+        "stages": {
+          "dev": {
+            "logLevel": "DEBUG"
+          },
+          "prod": {
+            "logLevel": "ERROR"
+          }
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ],
+      "package": {
+        "patterns": [
+          "!node_modules/**",
+          "!.git/**"
+        ],
+        "artifactsS3KeyDirname": "serverless/task-user-service/dev/code-artifacts"
+      }
+    },
+    "serviceRawFile": "service: task-user-service\r\n\r\nframeworkVersion: \"4\"\r\n\r\n# 프로바이더 설정\r\nprovider:\r\n  name: aws\r\n  runtime: nodejs20.x\r\n  region: us-east-1 # 버지니아 북부\r\n  stage: ${opt:stage, 'dev'} # 기본 스테이지는 dev\r\n\r\n  # IAM 역할 권한 설정\r\n  iam:\r\n    role:\r\n      statements:\r\n        - Effect: Allow\r\n          Action:\r\n            - logs:CreateLogGroup\r\n            - logs:CreateLogStream\r\n            - logs:PutLogEvents\r\n          Resource: \"*\"\r\n\r\n# 함수 정의\r\nfunctions:\r\n  # Task 서비스 함수\r\n  taskService:\r\n    handler: TaskService/index.handler\r\n    events:\r\n      - http:\r\n          path: /tasks\r\n          method: get\r\n          cors: true # CORS 활성화\r\n      - http:\r\n          path: /tasks\r\n          method: post\r\n          cors: true\r\n    environment:\r\n      STAGE: ${self:provider.stage}\r\n\r\n  # User 서비스 함수\r\n  userService:\r\n    handler: UserService/index.handler\r\n    events:\r\n      - http:\r\n          path: /users\r\n          method: get\r\n          cors: true\r\n      - http:\r\n          path: /users\r\n          method: post\r\n          cors: true\r\n    environment:\r\n      STAGE: ${self:provider.stage}\r\n\r\n# 사용자 정의 리소스\r\nresources:\r\n  Resources:\r\n    # API Gateway 응답 헤더 설정\r\n    GatewayResponseDefault4XX:\r\n      Type: \"AWS::ApiGateway::GatewayResponse\"\r\n      Properties:\r\n        ResponseParameters:\r\n          gatewayresponse.header.Access-Control-Allow-Origin: \"'*'\"\r\n          gatewayresponse.header.Access-Control-Allow-Headers: \"'*'\"\r\n        ResponseType: DEFAULT_4XX\r\n        RestApiId:\r\n          Ref: \"ApiGatewayRestApi\"\r\n\r\n    GatewayResponseDefault5XX:\r\n      Type: \"AWS::ApiGateway::GatewayResponse\"\r\n      Properties:\r\n        ResponseParameters:\r\n          gatewayresponse.header.Access-Control-Allow-Origin: \"'*'\"\r\n          gatewayresponse.header.Access-Control-Allow-Headers: \"'*'\"\r\n        ResponseType: DEFAULT_5XX\r\n        RestApiId:\r\n          Ref: \"ApiGatewayRestApi\"\r\n\r\n# 커스텀 설정\r\ncustom:\r\n  # 스테이지별 설정\r\n  stages:\r\n    dev:\r\n      logLevel: DEBUG\r\n    prod:\r\n      logLevel: ERROR\r\n\r\n# 플러그인 설정\r\nplugins:\r\n  - serverless-offline # 로컬 테스트용 플러그인\r\n\r\npackage:\r\n  patterns:\r\n    - \"!node_modules/**\" # node_modules 제외\r\n    - \"!.git/**\" # .git 폴더 제외\r\n",
+    "command": [
+      "logs"
+    ],
+    "options": {
+      "function": "taskService",
+      "tail": true
+    },
+    "error": {
+      "message": "No existing streams for the function",
+      "stack": "ServerlessError2: No existing streams for the function\n    at AwsLogs.getLogStreams (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:776:15296)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async logs:logs (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:776:14745)\n    at async PluginManager.runHooks (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:953:9311)\n    at async PluginManager.invoke (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:953:10082)\n    at async PluginManager.run (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:953:10813)\n    at async Serverless.run (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:960:10612)\n    at async runFramework (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:983:2696)\n    at async route (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:14772)\n    at async Object.run2 [as run] (file:///C:/Users/hb180/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:15173)",
+      "code": "NO_EXISTING_LOG_STREAMS"
+    },
+    "params": {},
+    "machineId": "6b645946d7f9eb2681f54ec2bf99a1cb",
+    "stage": "dev",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "b3305a21-e4a5-4a14-b055-3e3ad7c38b9f",
+    "orgName": "andle",
+    "userId": "wMqfwNXntmDfH2Tf38",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "andle",
+    "subscription": null,
+    "userEmail": "hodori788@gmail.com",
+    "serviceProviderAwsRegion": "us-east-1",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "430118855167",
+    "projectType": "traditional",
+    "versionSf": "4.4.7",
+    "serviceProviderAwsCfStackName": "task-user-service-dev",
+    "serviceUniqueId": "arn:aws:cloudformation:us-east-1:430118855167:stack/task-user-service-dev/48f42000-9aa3-11ef-a153-12d4a977d381",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:430118855167:stack/task-user-service-dev/48f42000-9aa3-11ef-a153-12d4a977d381",
+    "serviceProviderAwsCfStackCreated": "2024-11-04T11:52:36.724Z",
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": [
+      {
+        "OutputKey": "TaskServiceLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:us-east-1:430118855167:function:task-user-service-dev-taskService:1",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-task-user-service-dev-TaskServiceLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "UserServiceLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:us-east-1:430118855167:function:task-user-service-dev-userService:1",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-task-user-service-dev-UserServiceLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "ServiceEndpoint",
+        "OutputValue": "https://muoav1lj4a.execute-api.us-east-1.amazonaws.com/dev",
+        "Description": "URL of the service endpoint",
+        "ExportName": "sls-task-user-service-dev-ServiceEndpoint"
+      },
+      {
+        "OutputKey": "ServerlessDeploymentBucketName",
+        "OutputValue": "serverless-framework-deployments-us-east-1-940b3c0a-d2d4",
+        "ExportName": "sls-task-user-service-dev-ServerlessDeploymentBucketName"
+      }
+    ]
+  }
+}
