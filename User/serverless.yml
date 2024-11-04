@@ -1,0 +1,19 @@
+service: user-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+functions:
+  userService:
+    handler: service/handler.userHandler # handler.js의 userHandler 사용
+    events:
+      - http:
+          path: users
+          method: get
+          cors: true
+      - http:
+          path: users
+          method: post
+          cors: true

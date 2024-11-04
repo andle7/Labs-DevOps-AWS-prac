@@ -1,0 +1,19 @@
+service: task-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+functions:
+  taskService:
+    handler: service/handler.taskHandler # handler.js의 taskHandler 사용
+    events:
+      - http:
+          path: tasks
+          method: get
+          cors: true
+      - http:
+          path: tasks
+          method: post
+          cors: true
