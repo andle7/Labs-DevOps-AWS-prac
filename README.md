@@ -251,7 +251,6 @@ module.exports = { handler };
         URL: https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/tasks</br>
         Header에 Content-Type = application/json 추가</br>
         Body에 입력할 json</br>
-
         ```Json
           {
             "title": "새로운 태스크1",
