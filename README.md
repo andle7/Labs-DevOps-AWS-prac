@@ -105,7 +105,9 @@ package:
 ```
 </details>
 
-TaskService Lambda (TaskService/index.js)
+
+<details>
+<summary>TaskService Lambda (TaskService/index.js)</summary>
 
 ```JavaScript
 'use strict';
@@ -161,6 +163,7 @@ const handler = async (event) => {
 
 module.exports = { handler };
 ```
+</details>
 
 UserService  Lambda (UserService/index.js)
 
