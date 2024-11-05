@@ -1,14 +1,14 @@
 
 Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용
 
-- [ ] 1. IT 서비스 유형에 따른  AWS 서비스들
-- [ ] 2. MSA 구현 방식에 따른  AWS 서비스들
-- [ ] 3. Managed 기준에 따른 AWS 서비스들
-- [ ] 4. On Demand 기준에 따른 AWS 서비스들
-- [ ] 5. Frontend 서비스에 활용되는 AWS 서비스들
-- [ ] 6. Backend 서비스에 활용되는 AWS 서비스들
-- [ ] 7. Storage 서비스 개발에 활용되는  AWS  서비스들
-- [ ] 8. Database 서비스 개발에 활용되는 AWS  서비스들
+- [x] 1. ~~IT 서비스 유형에 따른  AWS 서비스들~~
+- [x] 2. ~~MSA 구현 방식에 따른  AWS 서비스들~~
+- [x] 3. ~~Managed 기준에 따른 AWS 서비스들~~
+- [x] 4. ~~On Demand 기준에 따른 AWS 서비스들~~
+- [x] 5. ~~Frontend 서비스에 활용되는 AWS 서비스들~~
+- [x] 6. ~~Backend 서비스에 활용되는 AWS 서비스들~~
+- [x] 7. ~~Storage 서비스 개발에 활용되는  AWS  서비스들~~
+- [x] 8. ~~Database 서비스 개발에 활용되는 AWS  서비스들~~
 - [ ] 9. CI/CD  AWS 서비스들
 - [ ] 10. CORS 보안 적용 AWS 서비스들
 - [ ] 11. Serverless 방식의 AWS 서비스들
