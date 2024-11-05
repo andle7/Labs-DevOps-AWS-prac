@@ -208,7 +208,7 @@
         
         1. Now we will create ECS Cluster's Security group. Go to [EC2](https://console.aws.amazon.com/ec2)  page and click **Create Security Group** on the left.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/8fe0dd84-5cc7-4de0-9349-07f65af209cc/image.png)
+           ![image](https://github.com/user-attachments/assets/5799ccc3-e9ce-4989-8d13-22035ebf6bc3)
             
         2. Create a security group for the ECS Cluster to be created in the future by entering the following. Importantly, you must select the source of the inbound rule as the **ALB-SG** you created earlier to allow only traffic from the Application Load Balancer:
         - Security Group Name : `ECS-ASG-SG`
@@ -219,7 +219,7 @@
             - Source : Search **ALB-SG** and choose
         - **Do not change Outbound Rule**
             
-           ![image](https://github.com/user-attachments/assets/5799ccc3-e9ce-4989-8d13-22035ebf6bc3)
+           ![image](https://github.com/user-attachments/assets/cc46b2af-5f45-41f5-a8cb-2fa5bf3152f9)
             
         1. Click **Create Security Group** button to complete ECS Cluster's security group creation.
         
@@ -229,11 +229,11 @@
         
         1. 1. Navigate to the [Amazon ECS](https://console.aws.amazon.com/ecs)  console. If it is your first time running ECS, you will see the **Get started** screen with an ECS overview video. Click **Cluster** in the left side navigation bar and then **Create Cluster**.
             
-           ![image](https://github.com/user-attachments/assets/cc46b2af-5f45-41f5-a8cb-2fa5bf3152f9)
+           ![image](https://github.com/user-attachments/assets/9d4ffba7-a98e-4275-896a-99cea5c4a7e8)
             
         2. Name your cluster **ECS-Workshop**
             
-           ![image](https://github.com/user-attachments/assets/9d4ffba7-a98e-4275-896a-99cea5c4a7e8)
+           ![image](https://github.com/user-attachments/assets/92e5fddb-0e15-44c7-b29c-5d4068337c72)
             
         3. Fill out the **Infrastructure** dropdown with the following settings:
             
@@ -247,7 +247,7 @@
             | Root EBS volume size | **100GB** |
             | SSH Key Pair | **None** |
             
-           ![image](https://github.com/user-attachments/assets/92e5fddb-0e15-44c7-b29c-5d4068337c72)
+           ![image](https://github.com/user-attachments/assets/62cb2cf3-7e2d-4461-8654-22e22db18c06)
             
         4. Fill out the **Network setting for Amazon EC2 instances** dropdown with the following settings:
             
@@ -258,15 +258,15 @@
             | Subnets | **Private** Subnet1, **Private** Subnet2 |
             | Security Group | **ECS-ASG-SG** |
             
-           ![image](https://github.com/user-attachments/assets/62cb2cf3-7e2d-4461-8654-22e22db18c06)
+            ![image](https://github.com/user-attachments/assets/0323f61f-d1de-479c-9f00-54238af34e0e)
             
         5. Finally, to be able to monitor your cluster, enable the **Container Insights** by expanding the **Monitoring** dropdown and turning on **Use Container Insights**. Once you have confirmed the settings for the ECS cluster, click **Create**
             
-            ![image](https://github.com/user-attachments/assets/0323f61f-d1de-479c-9f00-54238af34e0e)
+           ![image](https://github.com/user-attachments/assets/39298591-6984-4eb5-a1d6-322761789321)
             
         6. ECS Cluster has been created.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/cb580762-2e05-4a96-8d3d-3f73bd321770/image.png)
+            ![image](https://github.com/user-attachments/assets/5b7f11fe-fde1-42e7-946c-80aa35fb8b35)
             
         
         # ECS Task Definition
