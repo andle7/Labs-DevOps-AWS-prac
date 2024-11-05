@@ -226,8 +226,7 @@ module.exports = { handler };
 
 <details>
 <summary>Test 절차</summary>
-  - 
-    1. package 설치
+    1. package 설치</br>
     npm install --save-dev serverless@4 serverless-offline
     2. deploy
     serverless deploy --verbose
