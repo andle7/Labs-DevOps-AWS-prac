@@ -2,7 +2,7 @@
     
     고양이 이미지를 보여주는 Cats docker image와 강아지 이미지를 보여주는 Dogs docker image를 간단한 사용예로 container 서비스를 실습
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/06ae64f6-258b-420e-8d66-183d2e64b825/image.png)
+    ![image](https://github.com/user-attachments/assets/3a340faa-8c70-4293-b687-e2bee3fb423f)
     
     - Docker Image 설명
         
