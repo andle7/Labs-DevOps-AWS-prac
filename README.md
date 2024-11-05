@@ -36,7 +36,7 @@
   ```
   </details>
       <details>
-          <summary>TaskService > index.mjs</summary>
+          <summary>UserService  > index.mjs</summary>
             npm install express body-parser
 
   ```JavaScript
@@ -47,21 +47,21 @@
               const app = express();
               app.use(bodyParser.json());
 
-              let tasks = [];
+              let users = [];
 
-              app.get('/tasks', (req, res) => {
-                  res.json(tasks);
+              app.get('/users', (req, res) => {
+                  res.json(users);
               });
 
-              app.post('/tasks', (req, res) => {
-                  const task = req.body;
-                  tasks.push(task);
-                  res.status(201).json(task);
-              });
+             app.post('/users', (req, res) => {
+                 const user = req.body;
+                 users.push(user);
+                 res.status(201).json(user);
+             });
 
-              app.listen(3000, () => {
-                  console.log('TaskService is running on port 3000');
-              });
+             app.listen(3001, () => {
+                 console.log('UserService is running on port 3001');
+             });
 
   ```
   </details>
