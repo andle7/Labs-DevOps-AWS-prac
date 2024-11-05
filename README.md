@@ -10,7 +10,7 @@
         
         [**Service Overview**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/01-intro#service-overview)
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/00cd471f-3794-4c3d-bba3-6cfb16905ca7/image.png)
+        ![image](https://github.com/user-attachments/assets/3c9d2aa8-d1e1-4cc6-b3cb-208741c67b9e)
         
         1. **Web** is the main web page accessible by our ALB's DNS name. If you click **I♥Cats** or **I♥Dogs**, you will be redirected to the respective ECS service (**cats** or **dogs**)
         2. **Cats**, an EC2 task, randomly shows pictures of cats whenever you refresh the web page
