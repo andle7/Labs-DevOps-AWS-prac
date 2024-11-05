@@ -165,7 +165,8 @@ module.exports = { handler };
 ```
 </details>
 
-UserService  Lambda (UserService/index.js)
+<details>
+<summary>UserService  Lambda (UserService/index.js)</summary>
 
 ```JavaScript
 'use strict';
@@ -221,3 +222,4 @@ const handler = async (event) => {
 
 module.exports = { handler };
 ```
+</details>
