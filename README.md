@@ -39,18 +39,18 @@
         
         1. Navigate to the [Amazon ECR.](https://console.aws.amazon.com/ecr)  console. If it is your first time using Amazon ECR, you will see the welcome page. Open the left hand navigation bar and click **Repositories**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/beec0e80-ac50-468d-8ad4-27ce86bf153e/image.png)
+            ![image](https://github.com/user-attachments/assets/1ddfa6a4-2d1b-4244-8870-140de51c3cd5)
             
         2. Click **Create Repository** and enter **cats** as the repository name, leave the rest of the settings as default, then scroll down and click **Create repository**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/3e4a827c-0ba4-4320-9ed4-fecb00ad2cc3/image.png)
+           ![image](https://github.com/user-attachments/assets/f913d542-166e-44d1-933a-24678a3dbc4c)
             
         
         The repository name must be **web**, **cats**, **dogs** to proceed to the next step of **Tagging images and pushing to ECR**.
         
         1. Check if the three repositories were created properly.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/7cfd9dc1-c686-4024-a859-47145f8255ca/image.png)
+            ![image](https://github.com/user-attachments/assets/59ebab9b-b480-4203-aa9d-cf1d6c697bd2)
             
         
         ## (Alternative) Create ECR Repositories using AWS CLI
