@@ -22,7 +22,7 @@
         
         [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)  (Amazon ECR) is a fully AWS managed container image registry service that is secure, scalable, and reliable. You can use your preferred CLI to push, pull, and manage Docker images, Open Container Initiative (OCI) images, and OCI compatible artifacts. Amazon ECR supports public and private container image repositories as well.
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/eb0887a8-c247-49ae-8a2a-a1581fcf5bf7/image.png)
+        ![image](https://github.com/user-attachments/assets/af04450c-42c0-497d-9a27-fdbeb3ef2813)
         
         In this workshop, we will work with the following Amazon ECR components
         
