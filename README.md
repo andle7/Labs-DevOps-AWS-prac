@@ -95,7 +95,7 @@
             `source ~/.bash_profile
              docker build -t cats .`
             
-            ![vscode_cats_build_image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/dad82ab6-da58-44e8-a77d-c0b6f9ac7644/vscode_cats_build_image.png)
+           ![image](https://github.com/user-attachments/assets/2d6feaae-0bc5-4d5d-8e49-99535b763691)
             
         2. In **dogs** and **web**, we also examine the contents of the Dockerfile and build the image. Since we received the nginx image and installed or upgraded several tools while building the cats image, we can see that it is executed much faster than cats with the message **Using cache**.
             
@@ -109,7 +109,7 @@
         
         1. Navigate to the [Amazon ECR](https://console.aws.amazon.com/ecr)  console. Select the radio button for **cats** and click **View push commands.**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/3ea3e0a7-2b88-4856-a936-1737c2132478/image.png)
+           ![image](https://github.com/user-attachments/assets/c2447f78-77fd-487d-ab43-0edd8d2d6db8)
             
         
         ## Set environment variable
@@ -148,7 +148,7 @@
         
         Confirm that the images were pushed into ECR successfully. You should see the **latest** tagged image in each repository. Copy and paste the latest image URI into a text editor for reference later
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/3fea9095-b8d1-4266-a515-837d8855fcca/image.png)
+       ![image](https://github.com/user-attachments/assets/cd277051-f78b-46f6-a505-deb1adcdb1f0)
         
     - Amazon ECS
         
@@ -156,12 +156,12 @@
         
         [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)  (ECS) is a highly scalable and fast container management service. You can use it to run, stop, and manage containers on a cluster. With Amazon ECS, your containers are defined in a task definition that you use to run an individual task or multiple tasks within a service. ECS enables you to launch thousands of containers across the Cloud using your preferred Continuous Integration and Delivery (CI/CD) and automation tools, while also integrating seamlessly with AWS management and governance solutions.
         
-        ![aboutecs_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/544702d4-d66a-49a5-9dac-9d511d2e1027/aboutecs_en.png)
+        ![image](https://github.com/user-attachments/assets/a2689d68-662b-4074-af64-c778baf26a96)
         
         - A service is a configuration you can use to run and maintain a specified number of tasks simultaneously in a cluster.
         - A task definition is essentially a blueprint for your application (which are then run as tasks on a given service). Task definitions specify various parameters of your application such as memory, cpu, etc. (see example below).
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/379bc529-d9e0-4c49-9858-4a183ab899ae/image.png)
+           ![image](https://github.com/user-attachments/assets/5bb2a285-61d9-4912-8518-70b5da6e643a)
             
         
         In this workshop, we will create the following:
@@ -171,7 +171,7 @@
         - ECS Services which run our *web*, *cats*, and *dogs* tasks.
         - An [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)  (ALB) to handle distribution of traffic across our ECS services.
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/bbf1953a-ca8f-4253-808d-f2151c7adc26/image.png)
+       ![image](https://github.com/user-attachments/assets/10093cce-f00f-4450-b5d2-8d0681f2a45a)
         
         # ECS Cluster
         
@@ -185,11 +185,11 @@
         
         1. Go to [EC2](https://console.aws.amazon.com/ec2)  page.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/2cdbc2ff-77f2-49c2-9222-efb8665eb212/image.png)
+           ![image](https://github.com/user-attachments/assets/e236c72d-b58a-40e5-a96a-a2fe73f94477)
             
         2. Click **Create Security Group** on the left.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/aeb427c5-51c7-4130-b55c-7d9bfcc2dd70/image.png)
+           ![image](https://github.com/user-attachments/assets/0ca674f1-c929-44c4-82a5-12308d1dcc48)
             
         3. Create a security group for the Application Load Balancer to be created in the future by entering the following:
         - Security Group Name : `ALB-SG`
@@ -200,7 +200,7 @@
             - Source : Choose **Anywhere-IPv4** (0.0.0.0/0)
         - **Do not change Outbound Rule**
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/c9462165-2d28-45ad-8590-7992f578f7e1/image.png)
+       ![image](https://github.com/user-attachments/assets/6153bb58-ccf3-457b-a557-73e8fc89c91a)
         
         1. Click the Create Security Group button to complete the creation of a security group for the Application Load Balancer.
         
@@ -219,7 +219,7 @@
             - Source : Search **ALB-SG** and choose
         - **Do not change Outbound Rule**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/3c263412-88ae-4ab7-b670-f4d3d10d9e57/image.png)
+           ![image](https://github.com/user-attachments/assets/5799ccc3-e9ce-4989-8d13-22035ebf6bc3)
             
         1. Click **Create Security Group** button to complete ECS Cluster's security group creation.
         
@@ -229,11 +229,11 @@
         
         1. 1. Navigate to the [Amazon ECS](https://console.aws.amazon.com/ecs)  console. If it is your first time running ECS, you will see the **Get started** screen with an ECS overview video. Click **Cluster** in the left side navigation bar and then **Create Cluster**.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/5952ab7f-e20b-4336-a401-a9c023fd07c1/image.png)
+           ![image](https://github.com/user-attachments/assets/cc46b2af-5f45-41f5-a8cb-2fa5bf3152f9)
             
         2. Name your cluster **ECS-Workshop**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ee0dbac6-508f-4748-b226-61adf0769bf6/image.png)
+           ![image](https://github.com/user-attachments/assets/9d4ffba7-a98e-4275-896a-99cea5c4a7e8)
             
         3. Fill out the **Infrastructure** dropdown with the following settings:
             
@@ -247,7 +247,7 @@
             | Root EBS volume size | **100GB** |
             | SSH Key Pair | **None** |
             
-            ![cluster_12_1.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/e4e6d4b5-0dcf-4a3e-9b4e-d64e29fcf04c/cluster_12_1.png)
+           ![image](https://github.com/user-attachments/assets/92e5fddb-0e15-44c7-b29c-5d4068337c72)
             
         4. Fill out the **Network setting for Amazon EC2 instances** dropdown with the following settings:
             
@@ -258,11 +258,11 @@
             | Subnets | **Private** Subnet1, **Private** Subnet2 |
             | Security Group | **ECS-ASG-SG** |
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/114ef458-4c0a-4d3f-8f6a-a19d0d8714e6/image.png)
+           ![image](https://github.com/user-attachments/assets/62cb2cf3-7e2d-4461-8654-22e22db18c06)
             
         5. Finally, to be able to monitor your cluster, enable the **Container Insights** by expanding the **Monitoring** dropdown and turning on **Use Container Insights**. Once you have confirmed the settings for the ECS cluster, click **Create**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/5da4645f-704e-4865-b907-3177e1cfa9bf/image.png)
+            ![image](https://github.com/user-attachments/assets/0323f61f-d1de-479c-9f00-54238af34e0e)
             
         6. ECS Cluster has been created.
             
