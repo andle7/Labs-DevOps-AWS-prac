@@ -391,7 +391,7 @@
     
     You need to grant the Lambda function permissions to read and write data to your DynamoDB Table.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/73fdc6d5-a216-4b04-a551-229ff79e1579/image.png)
+    ![image](https://github.com/user-attachments/assets/fff4af20-52b7-4712-a068-36d8b4b683a5)
     
     You need to update the ***execution role*** the Lambda function assumes when it runs. AWS Identity and Access Management (IAM) is used to control access to AWS resources. You will use IAM to add the necessary DynamoDB access policies to your function.
     
@@ -406,7 +406,7 @@
     5. Select the check box next to the Policy name for **AmazonDynamoDBFullAccess**.
     6. Choose **Add permissions**.
     
-    ![image](https://github.com/user-attachments/assets/fff4af20-52b7-4712-a068-36d8b4b683a5)
+    ![image](https://github.com/user-attachments/assets/0c3eb0ab-b02c-47d0-a243-0d783c75ca84)
     
     **You just granted FULL ACCESS to the function!**
     
@@ -422,7 +422,7 @@
     }
     ```
     
-    ![image](https://github.com/user-attachments/assets/0c3eb0ab-b02c-47d0-a243-0d783c75ca84)
+    ![image](https://github.com/user-attachments/assets/4fbb2577-2f53-455e-b70a-a6632e9db4c4)
     
     Reminder: the [**DynamoDB** console](https://console.aws.amazon.com/dynamodb/home)  has an option to explore and view Items in the database table. Go verify that new items were actually created in the table. Seriously, go see for yourself...
     
@@ -442,7 +442,7 @@
     
     You need a function to read data for your API. You want it to be secure, so it will only be permitted to **read** values from the table, not create, update, nor delete items.
     
-    ![image](https://github.com/user-attachments/assets/4fbb2577-2f53-455e-b70a-a6632e9db4c4)
+    ![image](https://github.com/user-attachments/assets/798d59e1-97e2-41c7-b361-d81da562cafc)
     
     [**To create the Lambda function**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/module1/build-api#to-create-the-lambda-function)
     
@@ -501,7 +501,7 @@
     
     Next, you will create the entry point for your Users microservice by connecting web requests to your Lambda function.
     
-    ![image](https://github.com/user-attachments/assets/798d59e1-97e2-41c7-b361-d81da562cafc)
+    ![image](https://github.com/user-attachments/assets/5c4e3216-58c4-4784-b1a2-4995d2a7d4a1)
     
     [**1 - Create an API**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/module1/build-api#1-create-an-api)
     
@@ -590,7 +590,7 @@
     
     1. Append **users** to the URL to invoke the `/users` resource and try again!
     
-    ![image](https://github.com/user-attachments/assets/5c4e3216-58c4-4784-b1a2-4995d2a7d4a1)
+    ![image](https://github.com/user-attachments/assets/9a742676-61ea-485d-b887-d75f2aad1964)
     
     **Congratulations, you deployed an API!**
     
@@ -618,7 +618,7 @@
     
     Components exist to parse URL parameters, retrieve headers and cookies, verify authentication, and route requests to a method to process and return a response. The method or function usually connects to a data source, queries and retrieves records, then returns some message directly to the client. Applications built with traditional frameworks do offer a lot of ready-built functionality. You could run your existing architectures in the cloud, but you would still need to manage servers.
     
-    ![image](https://github.com/user-attachments/assets/9a742676-61ea-485d-b887-d75f2aad1964)
+    ![image](https://github.com/user-attachments/assets/fc739bb5-29f1-4f04-90df-38a6e9ccbada)
     
     ## Event Driven Architecture
     
@@ -636,7 +636,7 @@
     
     Instead of sending the response directly to the client, the response *event* is sent back to API Gateway. API Gateway then forwards the body of the event to the calling client to complete the request/response cycle.
     
-    ![image](https://github.com/user-attachments/assets/fc739bb5-29f1-4f04-90df-38a6e9ccbada)
+    ![image](https://github.com/user-attachments/assets/af57fb05-0d3b-413f-81ed-e39d9ac6cd52)
     
     In event-driven architecture, services do not know how events will be processed further. This creates flexibility to extend the system, independent of other components. This is a big difference from traditional frameworks, providing immense opportunity to add features to your solution without disrupting an existing, operating solution!
     
@@ -647,7 +647,7 @@
     
     Congratulations! You have started your serverless journey!
     
-    ![image](https://github.com/user-attachments/assets/af57fb05-0d3b-413f-81ed-e39d9ac6cd52)
+    ![image](https://github.com/user-attachments/assets/58d8c2d8-f813-440f-96d4-be5dac169efd)
     
     Continue your journey by building a *Users Service* with authentication, authorization, and automated deploy with AWS SAM. You will add unit-tests, observability, alarms, and a dashboard to monitor the application!
     
