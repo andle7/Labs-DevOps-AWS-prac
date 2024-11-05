@@ -5,9 +5,8 @@
 
 <details>
     <summary>기존 Codes</summary>
-<p>
       <details>
-         &nbsp;&nbsp;<summary>TaskService > index.mjs</summary>
+         <summary>TaskService > index.mjs</summary>
            npm install express body-parser
 
   ```JavaScript
@@ -37,7 +36,7 @@
   ```
   </details>
       <details>
-          &nbsp;&nbsp;<summary>TaskService > index.mjs</summary>
+          <summary>TaskService > index.mjs</summary>
             npm install express body-parser
 
   ```JavaScript
@@ -66,6 +65,5 @@
 
   ```
   </details>
-</p>
 </details>
 
