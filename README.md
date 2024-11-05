@@ -301,7 +301,7 @@
         
         1. In [Amazon ECS](https://console.aws.amazon.com/ecs) , go to **Task definitions** menu on the left and click **Create new Task Definition** button.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ffda2438-a7e0-46f3-b826-809259188bf6/image.png)
+            ![image](https://github.com/user-attachments/assets/d1616dda-7fa1-4ff0-8d1f-006149019ce3)
             
         2. Task definition family : input `webdef`
         3. Configure Infrastructure with following details:
@@ -318,13 +318,13 @@
         - Task execution role
             - `Create new role` or `ecsTaskExcutionRole`
                 
-                ![webdef_2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/bd8342be-6607-4c2b-b7dc-a7a2903f7647/webdef_2.png)
+               ![image](https://github.com/user-attachments/assets/b8747be2-b192-4e85-b40f-7c99296d78ff)
                 
         1. Configure Container with following details:
             
             Copy the web container image URL by clicking on the square beside of the latest tagged image URL in ECR's web repository. Keep the ECR window open as you still need to do the same in later.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/004ce07e-18a3-498b-9422-650273857bc6/image.png)
+            ![image](https://github.com/user-attachments/assets/994e9ec6-ea76-4a88-a7c2-edc1e4e71072)
             
             - Container name: `web`
             - Image URI: `Workshop participant's latest web image URI`
@@ -333,7 +333,7 @@
             - Port name : `web-80-tcp`
             - App protocol : `HTTP`
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/71941c0f-c01d-4f94-8774-ecb337b2ce5c/image.png)
+            ![image](https://github.com/user-attachments/assets/e76c1305-0f8d-4a01-8c14-e482662b0b93)
             
         2. Configure Logging with following details:
             - awslogs-group : `/ecs/webdef`
@@ -341,7 +341,7 @@
             - awslogs-stream-prefix : `ecs`
             - awslogs-create-group : `true`
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/46d89249-f536-45bf-a9db-c11b6bc4f967/image.png)
+           ![image](https://github.com/user-attachments/assets/9503e250-f84d-4e4f-95e3-46ddc5c3ea13)
             
         3. Click **Create** button to create task definition.
         
@@ -417,7 +417,7 @@
         
         1. Navigate to the [Amazon ECS](https://console.aws.amazon.com/ecs)  console and click **Task definitions** in the left hand navigation and then click **Create new task definition** - **Create new task definition**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/42af4ab6-8c1f-4ee7-8abd-6277cfc31b72/image.png)
+           ![image](https://github.com/user-attachments/assets/4e88c436-a994-416c-83fc-8386d91bae39)
             
         2. Set the Task definition family name as **catsdef**
         3. Configure **cats** container.
@@ -425,17 +425,17 @@
             - Image: Use the latest **cats** image URI from [Amazon ECR](https://console.aws.amazon.com/ecr)
         4. In the "Port mappings" section, set Container port to **80**, Protocol to **TCP** Port name to **cats-80-tcp** and set App protocol to **HTTP** (these parameter can be used by [Service Connect](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html) ).
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/0c91e3c0-5c70-43fd-b481-233106925891/image.png)
+            ![image](https://github.com/user-attachments/assets/1e352112-2413-4435-8351-02d13dceab3d)
             
         5. Skip the other sections ("Environment variables"; "HealthCheck" and "Docker configuration") and click **Next**.
         6. Select **Amazon EC2 instances** and remove **AWS Fargate (Serverless)** for App environment. Set the Operating system to **Linux/X86_64**, CPU to **0.5 vCPU** and Memory to **1 GB**.
         7. Select "Create new role" for **Task execution role**, choose **bridge** for "Network mode" and leave the other sections ("Container size", "Task roles", "Network mode")
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/b7a95ecf-6899-4491-83c6-a308a02cf581/image.png)
+              ![image](https://github.com/user-attachments/assets/05e77301-3626-4a92-872a-3a15e37cfead)
             
         8. Open the "Monitoring and logging" section and select **Use log collection**. Select **Amazon CloudWatch**, leave the default values.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/0863ea9a-707f-41ee-b406-5875ac013d8a/image.png)
+            ![image](https://github.com/user-attachments/assets/361a7324-eeba-459f-90a0-1bc933586d54)
             
         9. Leave the other sections ("Container size", "Task roles, network mode" ; "Storage" ; "Tags") with default values and click **Next**.
         10. Review your configuration and click **Create** at the bottom.
