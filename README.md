@@ -85,7 +85,7 @@
         1. Switch to the VSCode server browser screen.
         2. Check the Dockerfile and application source code of web, cats, and dogs to be built in the future. Docker reads the Dockerfile and automatically builds the image. The Dockerfile in the cats directory is required to build the **cats** Docker image. Click the Open Folder button on the left panel of VSCode to select the ecs-casts-dogs folder. Then, select the cats directory and click the OK button. On the **Do you trust the authors of the files in this folder?** screen, check the checkbox and click the **Yes, I trust the authors** button.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/fb03e423-6ce0-4771-a9bf-000b73826484/image.png)
+            ![image](https://github.com/user-attachments/assets/84bd09f7-365e-42e3-b1cb-e129555a7216)
             
         
         [Learn more about what **FROM**, **RUN**, etc. mean in a Dockerfile](https://docs.docker.com/engine/reference/builder/#dockerfile-reference) . For example, the **FROM** command initiates a new build stage and sets the base image for subsequent commands.
