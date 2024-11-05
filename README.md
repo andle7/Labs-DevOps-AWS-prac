@@ -37,8 +37,9 @@
    - 대부분의 서비스가 예약 인스턴스를 통한 비용 절감 지원
    - Auto Scaling 기능으로 자원 사용 최적화 가능
 
-**DynamoDB는 단순한 Key-Value DB가 아닌, Key-Value와 문서형 DB의 특성을 모두 가진 하이브리드 데이터베이스**
+   **DynamoDB는 단순한 Key-Value DB가 아닌, Key-Value와 문서형 DB의 특성을 모두 가진 하이브리드 데이터베이스**
 
+    
     - **Key-Value 특성**
         
         ```json
