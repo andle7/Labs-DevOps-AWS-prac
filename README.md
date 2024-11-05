@@ -4,7 +4,7 @@
     - node.js version 20.x  esm 방식으로 lambda code 적용했음 !
     - 실습 진행 중 오류가 있으면 강사님이나 mentor에게 알려주세요 !
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/7c906f1f-45b6-4a4f-836a-ce9acb16508c/image.png)
+    ![image](https://github.com/user-attachments/assets/f1e2186c-a5be-4c7c-9834-1612bc1e1c43)
     
     Everyone needs to start somewhere! Data storage and retrieval is a cornerstone of all development.
     
@@ -60,7 +60,7 @@
     
     Before you can create database items, you need to create a **table** to store data:
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/28e8e255-f129-4b56-827d-521eb9a3f350/image.png)
+    ![image](https://github.com/user-attachments/assets/72ddbb5e-1be8-457e-b119-3f48d3325404)
     
     [**To create a DynamoDB table**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/module1/data#to-create-a-dynamodb-table)
     
@@ -264,7 +264,7 @@
     
     In this section, you will connect from a Lambda function to the DynamoDB table to add data programmatically.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/07f1e4f6-40e9-4b32-8839-3039fa604dd8/image.png)
+   ![image](https://github.com/user-attachments/assets/a134a8f4-2054-457b-b91a-786258499202)
     
     **Practice what you've learned!**
     
@@ -406,7 +406,7 @@
     5. Select the check box next to the Policy name for **AmazonDynamoDBFullAccess**.
     6. Choose **Add permissions**.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/21d757db-da5d-4c97-a64e-35d006c83504/image.png)
+    ![image](https://github.com/user-attachments/assets/fff4af20-52b7-4712-a068-36d8b4b683a5)
     
     **You just granted FULL ACCESS to the function!**
     
@@ -422,7 +422,7 @@
     }
     ```
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/dfc495dc-cfc8-4439-bd44-4e548120ece3/image.png)
+    ![image](https://github.com/user-attachments/assets/0c3eb0ab-b02c-47d0-a243-0d783c75ca84)
     
     Reminder: the [**DynamoDB** console](https://console.aws.amazon.com/dynamodb/home)  has an option to explore and view Items in the database table. Go verify that new items were actually created in the table. Seriously, go see for yourself...
     
@@ -442,7 +442,7 @@
     
     You need a function to read data for your API. You want it to be secure, so it will only be permitted to **read** values from the table, not create, update, nor delete items.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/2972593f-77df-4cec-9f02-a8520b816e5e/image.png)
+    ![image](https://github.com/user-attachments/assets/4fbb2577-2f53-455e-b70a-a6632e9db4c4)
     
     [**To create the Lambda function**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/module1/build-api#to-create-the-lambda-function)
     
@@ -501,7 +501,7 @@
     
     Next, you will create the entry point for your Users microservice by connecting web requests to your Lambda function.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/9e61deda-957a-4c02-b3cc-d8a8f7653224/image.png)
+    ![image](https://github.com/user-attachments/assets/798d59e1-97e2-41c7-b361-d81da562cafc)
     
     [**1 - Create an API**](https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/module1/build-api#1-create-an-api)
     
@@ -590,7 +590,7 @@
     
     1. Append **users** to the URL to invoke the `/users` resource and try again!
     
-    ![api_gateway_test.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/8ef59caa-52ac-43ec-ad6f-f21b3042036f/api_gateway_test.png)
+    ![image](https://github.com/user-attachments/assets/5c4e3216-58c4-4784-b1a2-4995d2a7d4a1)
     
     **Congratulations, you deployed an API!**
     
@@ -618,7 +618,7 @@
     
     Components exist to parse URL parameters, retrieve headers and cookies, verify authentication, and route requests to a method to process and return a response. The method or function usually connects to a data source, queries and retrieves records, then returns some message directly to the client. Applications built with traditional frameworks do offer a lot of ready-built functionality. You could run your existing architectures in the cloud, but you would still need to manage servers.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/8becd0ec-a71a-4878-b4d8-3397c74bb458/image.png)
+    ![image](https://github.com/user-attachments/assets/9a742676-61ea-485d-b887-d75f2aad1964)
     
     ## Event Driven Architecture
     
@@ -636,7 +636,7 @@
     
     Instead of sending the response directly to the client, the response *event* is sent back to API Gateway. API Gateway then forwards the body of the event to the calling client to complete the request/response cycle.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/71d54cd8-6c0b-4ad5-b753-85e7914eabbe/image.png)
+    ![image](https://github.com/user-attachments/assets/fc739bb5-29f1-4f04-90df-38a6e9ccbada)
     
     In event-driven architecture, services do not know how events will be processed further. This creates flexibility to extend the system, independent of other components. This is a big difference from traditional frameworks, providing immense opportunity to add features to your solution without disrupting an existing, operating solution!
     
@@ -647,7 +647,7 @@
     
     Congratulations! You have started your serverless journey!
     
-    ![path-serverless-fun.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/a31003b7-d989-4d01-8270-a9011d813b3d/path-serverless-fun.png)
+    ![image](https://github.com/user-attachments/assets/af57fb05-0d3b-413f-81ed-e39d9ac6cd52)
     
     Continue your journey by building a *Users Service* with authentication, authorization, and automated deploy with AWS SAM. You will add unit-tests, observability, alarms, and a dashboard to monitor the application!
     
