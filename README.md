@@ -32,5 +32,5 @@
             console.log('TaskService is running on port 3000');
         });
 
-```   </details><summary>TaskService > index.mjs</summary></details>
+```   </details>
 
