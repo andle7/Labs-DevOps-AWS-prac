@@ -658,12 +658,12 @@
             
         8. **Listeners and routing**: Come back to **Load balancers** browser tab, and select **web** (the target group we just created) as HTTP:80 Listener
             
-            ![image](https://github.com/user-attachments/assets/5f6ed1e3-03c0-4f9d-a505-1501121c0194)
+           ![image](https://github.com/user-attachments/assets/665cadcc-3804-4edc-947a-300e9e10c062)
             
         
         9. **Summary**: Review the configuration and **Create load balancer.**
         
-        ![image](https://github.com/user-attachments/assets/291903a8-c091-4412-9098-23f178bef7b6)
+         ![image](https://github.com/user-attachments/assets/457cea42-f392-4d73-aace-37f76a642a1b)
         
         # Create Web Service
         
@@ -671,18 +671,18 @@
         
         1. Navigate to the [Amazon ECS](https://console.aws.amazon.com/ecs)  console and select **DEMOGO-ECS** cluster. Go to **Services** tab and click **Create**. Leave default to the rest options not mentioned.
             
-            ![image](https://github.com/user-attachments/assets/9b5e5209-6df2-4bcf-8aca-230477a290a9)
+            ![image](https://github.com/user-attachments/assets/dd29315b-4b9e-48d9-b786-03b41eff2599)
             
         2. Configure service Environment
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/d1563392-b521-4009-8adb-89fb9b612fe8/image.png)
+            ![image](https://github.com/user-attachments/assets/721d511e-2e62-454b-a375-e28cc5509c57)
             
             | Setting | Value |
             | --- | --- |
             | **Launch type** | EC2 |
         3. Configure service Deployment Configuration
             
-            ![configure_web_service_deployment_configuration.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/43a19b43-0a8b-42eb-b8fd-c50653c523fa/configure_web_service_deployment_configuration.png)
+            ![image](https://github.com/user-attachments/assets/05f3fd91-c877-4245-8afc-c06058be9ff7)
             
             | Setting | Value |
             | --- | --- |
@@ -692,11 +692,11 @@
             | **Number of Tasks** | 2 |
         4. Configure Load Balancing
             
-            ![configure_web_service_load_balancing.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/5a4e3c0b-d773-425b-ab14-748b2ddaa2a3/configure_web_service_load_balancing.png)
+            ![image](https://github.com/user-attachments/assets/30b34bb8-ea3f-48ae-ade1-9e32d0715cb9)
             
         5. Configure Task Placement
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/1131a0ea-67de-4991-9aa4-711b2b0c55f0/image.png)
+            ![image](https://github.com/user-attachments/assets/4bbf8099-099a-47b9-bbea-da50612c8afd)
             
             | Setting | Value |
             | --- | --- |
@@ -704,7 +704,7 @@
         6. Leave the other options unchanged and click **Create**
         7. Check web Services and Tasks.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/30d27d89-e8d7-40ce-97d3-be80ee6b60fe/image.png)
+           ![image](https://github.com/user-attachments/assets/eb41fdfd-f0a4-4812-ac0c-208430227f68)
             
         
         # Create Cats Service
@@ -713,14 +713,14 @@
         1. Again, Click **Create** in DEMOGO-ECS **Services** tab.
         2. Configure service Envrironment
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/299c8fca-6e8a-4ea6-8f81-564d6fff818c/image.png)
+       ![image](https://github.com/user-attachments/assets/5eb412fd-b660-4bea-9f2f-c019d5001706)
         
         | Setting | Value |
         | --- | --- |
         | **Launch type** | EC2 |
         1. Configure service Deployment Configuration
             
-            ![configure_cats_service_deployment_configuration_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/a35d51f9-4a80-4b75-a690-989604390789/configure_cats_service_deployment_configuration_en.png)
+            ![image](https://github.com/user-attachments/assets/a470005c-81a6-4a18-88bd-3927b6eae612)
             
             | Setting | Value |
             | --- | --- |
@@ -730,7 +730,7 @@
             | **Number of Tasks** | 2 |
         2. Configure Load Balancing
             
-            ![configure_cats_service_load_balancing_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/99a8d19b-0d27-40e7-9fb2-5cf6764bfaa6/configure_cats_service_load_balancing_en.png)
+            ![image](https://github.com/user-attachments/assets/5295c715-840b-4bd1-9e81-d46a64c4179a)
             
             | Setting | Value |
             | --- | --- |
@@ -753,7 +753,7 @@
             | **Placement Templates** | AZ Balanced spread |
         4. Check cats Services and Tasks.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/92eb1853-2f54-4851-83b8-6a72a486c86e/image.png)
+            ![image](https://github.com/user-attachments/assets/b3dbc46e-2e7f-4bc1-9d05-e46d3c6d39dd)
             
         
         # Create Dogs Service
@@ -763,11 +763,11 @@
         1. Again, Click **Create** in DEMOGO-ECS **Services** tab.
         2. Configure service Envrironment
         
-        ![configure_dogs_service_environment_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/0eacbe4e-a613-4040-b850-374e27a9946c/configure_dogs_service_environment_en.png)
+        ![image](https://github.com/user-attachments/assets/a278f187-a774-448a-82d6-5c5e7d5968c2)
         
         1. Configure service Deployment Configuration
             
-            ![configure_dogs_service_deployment_configuration_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/74c2919b-7bbe-4d64-84dd-86de6ec22103/configure_dogs_service_deployment_configuration_en.png)
+           ![image](https://github.com/user-attachments/assets/69e6d310-f7ed-459c-890a-fb802c5c9df2)
             
             | Setting | Value |
             | --- | --- |
@@ -781,11 +781,11 @@
         - Security group: `ECS-ASG-SG`
         - Public IP: `Off`
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/b79707d2-f1fe-4d8f-8d37-46e5e8a0c752/image.png)
+           ![image](https://github.com/user-attachments/assets/e351a581-f1cf-49ee-b8aa-eb7c4d83fcce)
             
         1. Configure Load Balancing
             
-            ![configure_dogs_service_load_balancing_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/dd71f5a3-3882-47cc-b937-f8f963996e2c/configure_dogs_service_load_balancing_en.png)
+            ![image](https://github.com/user-attachments/assets/04ad284d-176a-45d9-b57a-b30585ed8e15)
             
         
         | Setting | Value |
@@ -808,7 +808,7 @@
             | **Service auto scaling** | Use service auto scaling : **unchecked** |
         2. Check dogs Services and Tasks.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ef5282b4-4615-48a4-9989-11c802b2a993/image.png)
+            ![image](https://github.com/user-attachments/assets/0c9ae6bf-505e-4b4a-8dd7-b6ec32dd7509)
             
         
         # Service Check
@@ -817,16 +817,16 @@
         
         1. Check that the status of each service in the **DEMOGO-ECS** cluster is **ACTIVE** and each service has two `Running tasks` and that each task is in the `RUNNING` state.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/f4fe9af9-33ed-4d6f-94c8-aa20cf708426/image.png)
+            ![image](https://github.com/user-attachments/assets/4d8c5fa3-7419-4bc7-be2d-d9d3f99d0ccc)
             
         2. Notice that the **dogs** service uses the FARGATE launch type when **cats** and **web** use EC2. Because Fargate launches containers as needed, there is no EC2 instance associated with the **dogs** service
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/e0be2502-1771-4021-b9b4-d1c6ee7a9ce6/image.png)
-            
+            ![image](https://github.com/user-attachments/assets/326ae0e5-43a2-48b6-8481-156d40bd4cdc)
+
         3. Navigate to the [Amazon EC2 Load Balancers.](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#LoadBalancers:)  console and copy the DNS name of **demogo-alb**. Paste the **DNS Name** into your web browser, you should be redirected to the **web** service since we set that as our default path
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/e33efae5-e1ee-4320-b03a-904302f0edb9/image.png)
+           ![image](https://github.com/user-attachments/assets/0a19286e-070f-42d1-bba0-862edb753f86)
             
         4. Click **I♥Cats** or **I♥Dogs.** to see the pictures of some furry Amazonian friends!
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ee234a7f-531b-43cd-a444-9b35a3f056a1/image.png)
+            ![image](https://github.com/user-attachments/assets/3f61e0ae-e82b-4e88-95ac-637768d1d93b)
