@@ -512,15 +512,15 @@
         4. In the "Port mappings" section, set Container port to **80**, Protocol to **TCP**, delete **Port name** and set App protocol to **None** (these parameter only applies to [Service Connect](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html) ).
         5. Skip the "Environment variables" and "HealthCheck" sections and click **Next**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ac700f40-abd1-44e8-96fb-c39989aac192/image.png)
+           ![image](https://github.com/user-attachments/assets/df23cb57-5042-4969-8bdd-16d924544122)
             
         6. Keep **AWS Fargate (Serverless)** selected for App environment. Set the Operating system to **Linux/X86_64**, CPU to **0.5 vCPU** and Memory to **1GB**.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/828b91e5-23e7-47f5-b296-61ec1dd9391f/image.png)
+            ![image](https://github.com/user-attachments/assets/91b79600-0b6f-454d-a844-cf3984dda6f3)
             
         7. Leave other parameters as default and click **Next**. Note that log collection is activated by default when using **Fargate** as App environment.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/0894332f-7f66-4d3f-b07f-f6716794954e/image.png)
+            ![image](https://github.com/user-attachments/assets/fb5125e7-6207-4f46-85e9-a663a216d844)
             
         8. Review your configuration and click **Create** at the bottom.
         
@@ -588,19 +588,19 @@
         
         1. Go to the console [IAM](https://console.aws.amazon.com/iam)  and navigate to the **Roles** menu on the left-hand side. Search for **ecs** and select the **ecsTaskExecutionRole** role from the search results.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/4cc39da1-7206-42dd-b721-a56d89ac10c6/image.png)
+            ![image](https://github.com/user-attachments/assets/c7ca1df1-a617-42ac-aa1d-4d5278391a0c)
             
         2. On the right-hand side of the **Permissions** tab, click on **Add permissions** and then select **Attach policies**.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/bbb4ea86-18e5-43d5-bfdc-97ac341b7671/image.png)
+           ![image](https://github.com/user-attachments/assets/a6013a91-b078-4209-955d-b1cb20ad61f0)
             
         3. In the search bar, type in "cloudwatchfull" and select the **CloudWatchFullAccess** policy. Check the box next to it and click on **Add permissions**.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/c15a5d52-9408-4030-91ff-53826cb93a9f/image.png)
+           ![image](https://github.com/user-attachments/assets/a7c80d12-f7ad-4bf0-be30-3fa9fac0caa1)
             
         4. Verify that the policy has been successfully added.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/ae0472f9-94bf-41c7-84a5-70a72e8b295e/image.png)
+           ![image](https://github.com/user-attachments/assets/ba58ee6e-ac82-4037-8fe7-0686eaa459a6)
             
         
         # ECS Service
@@ -624,15 +624,15 @@
         1. Navigate to the [EC2 Load Balancers.](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName)  console
         2. Click **Create Load Balancer** and select **Application Load Balancer.**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/09d2fd83-b87b-437e-a7ec-2237ef4f3d8b/image.png)
+           ![image](https://github.com/user-attachments/assets/cbbd93a0-21ce-48c6-b1a3-2cebbab7d98f)
             
         3. Configure the Load Balancer with the following settings
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/1f150ccc-159b-4035-9f7f-748feacd6126/image.png)
+           ![image](https://github.com/user-attachments/assets/f6372501-1b55-46ed-bc00-18c505b0de84)
             
         4. **Network mapping**: Availability zones
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/49039049-0ef5-48c5-8e1a-2c3795755c62/image.png)
+           ![image](https://github.com/user-attachments/assets/295460c5-a509-44a3-b194-bf44846dd442)
             
             | Setting | Value |
             | --- | --- |
@@ -641,11 +641,11 @@
             | **Subnet** | **Public**Subnet1 and **Public**Subnet2 |
         5. Select **ecs-demogo-ALBSG** or **ecs-cats-and-dogs-ALBSG-XXX** (your security group name will look slightly different) and deselect the **default** security group.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/bf609571-c0fe-420c-b92d-f0308b86a956/image.png)
+           ![image](https://github.com/user-attachments/assets/7d671242-ee33-4090-8389-dd4fc75c6aef)
             
         6. **Listeners and routing**:
             
-            ![web_target_en.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/316b4222-b8ec-4152-8a95-a8d044c8825c/web_target_en.png)
+            ![image](https://github.com/user-attachments/assets/50a781aa-1fb8-4fb3-87f7-6e96c8256e3e)
             
             | Setting | Value |
             | --- | --- |
@@ -654,16 +654,16 @@
             | **Port** | 80 |
         7. Hit **Next** and skip **Register Targets.** Click **Create target group.**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/2907ad4e-1fc9-4893-a83e-11713ef920f4/image.png)
+           ![image](https://github.com/user-attachments/assets/50bee561-61c0-4c7b-b397-2f82a8515ef4)
             
         8. **Listeners and routing**: Come back to **Load balancers** browser tab, and select **web** (the target group we just created) as HTTP:80 Listener
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/7ecf4e03-7c6d-4ad7-8fcd-99ccb3b6bddb/image.png)
+            ![image](https://github.com/user-attachments/assets/5f6ed1e3-03c0-4f9d-a505-1501121c0194)
             
         
         9. **Summary**: Review the configuration and **Create load balancer.**
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/cfee99ff-e787-4ccc-b329-50dc4a36bcda/image.png)
+        ![image](https://github.com/user-attachments/assets/291903a8-c091-4412-9098-23f178bef7b6)
         
         # Create Web Service
         
@@ -671,7 +671,7 @@
         
         1. Navigate to the [Amazon ECS](https://console.aws.amazon.com/ecs)  console and select **DEMOGO-ECS** cluster. Go to **Services** tab and click **Create**. Leave default to the rest options not mentioned.
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/f6c8c1e5-1993-4579-97b1-1a707a5ea487/image.png)
+            ![image](https://github.com/user-attachments/assets/9b5e5209-6df2-4bcf-8aca-230477a290a9)
             
         2. Configure service Environment
             
