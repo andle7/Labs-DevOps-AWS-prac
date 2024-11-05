@@ -2,7 +2,8 @@
 
 ---
 
-serverless.yml
+<details>
+<summary>serverless.yml</summary>
 
 ```yml
 service: task-user-service
@@ -102,7 +103,7 @@ package:
     - '!.git/**'          # .git 폴더 제외
 
 ```
-
+</details>
 
 TaskService Lambda (TaskService/index.js)
 
