@@ -223,3 +223,33 @@ const handler = async (event) => {
 module.exports = { handler };
 ```
 </details>
+
+<details>
+<summary>Test 절차</summary>
+  - 
+    1. package 설치
+    npm install --save-dev serverless@4 serverless-offline
+    2. deploy
+    serverless deploy --verbose
+    3. deploy 후 엔드포인트 확인
+    endpoints:
+    GET - https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/tasks
+    POST - https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/tasks
+    GET - https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/users
+    POST - https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/users
+    functions:
+    taskService: task-user-service-dev-taskService (1.3 kB)
+    userService: task-user-service-dev-userService (1.3 kB)
+    4. Lambda 함수 수행 로그 확인 (terminal 창 각각 띄워 서 로그 모너터링)
+    serverless logs --function taskService --tail
+    5. postman 테스트
+        
+        A-1) TaskService POST
+        URL: https://al9likgcld.execute-api.ap-northeast-2.amazonaws.com/dev/tasks
+        Header에 Content-Type = application/json 추가
+        Body에 입력할 json
+</details>
+
+
+
+
