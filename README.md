@@ -1,5 +1,6 @@
 
-Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용
+<details>
+<summary>Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용</summary>
 
 - [x] 1. ~~IT 서비스 유형에 따른  AWS 서비스들~~
 - [x] 2. ~~MSA 구현 방식에 따른  AWS 서비스들~~
@@ -20,3 +21,4 @@ Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용
 - [x] 17. ~~Serverless To Do Service 구현 - Lambda, API Gateway~~
 - [x] 18. ~~Serverless To Do Service에 IaC 적용 - Serverless Framework~~
 
+</details>
