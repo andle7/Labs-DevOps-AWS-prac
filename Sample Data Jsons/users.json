@@ -1,0 +1,108 @@
+{
+    "tableUsers": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "alice.johnson@example.com" },
+                    "user_name": { "S": "Alice Johnson" },
+                    "user_contact": { "S": "+1-555-0101" },
+                    "age": { "N": "28" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-01-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "bob.smith@example.com" },
+                    "user_name": { "S": "Bob Smith" },
+                    "user_contact": { "S": "+1-555-0102" },
+                    "age": { "N": "34" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-02-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "charlie.brown@example.com" },
+                    "user_name": { "S": "Charlie Brown" },
+                    "user_contact": { "S": "+1-555-0103" },
+                    "age": { "N": "22" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-03-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "diana.prince@example.com" },
+                    "user_name": { "S": "Diana Prince" },
+                    "user_contact": { "S": "+1-555-0104" },
+                    "age": { "N": "30" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-04-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "ethan.hunt@example.com" },
+                    "user_name": { "S": "Ethan Hunt" },
+                    "user_contact": { "S": "+1-555-0105" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-05-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "fiona.gallagher@example.com" },
+                    "user_name": { "S": "Fiona Gallagher" },
+                    "user_contact": { "S": "+1-555-0106" },
+                    "age": { "N": "27" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-06-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "george.costanza@example.com" },
+                    "user_name": { "S": "George Costanza" },
+                    "user_contact": { "S": "+1-555-0107" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-07-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "hannah.baker@example.com" },
+                    "user_name": { "S": "Hannah Baker" },
+                    "user_contact": { "S": "+1-555-0108" },
+                    "age": { "N": "19" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-08-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        }
+    ]
+}

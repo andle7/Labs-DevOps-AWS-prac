@@ -1,0 +1,654 @@
+{
+    "tableUsers": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "alice.johnson@example.com" },
+                    "user_name": { "S": "Alice Johnson" },
+                    "user_contact": { "S": "+1-555-0101" },
+                    "age": { "N": "28" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-01-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "bob.smith@example.com" },
+                    "user_name": { "S": "Bob Smith" },
+                    "user_contact": { "S": "+1-555-0102" },
+                    "age": { "N": "34" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-02-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "charlie.brown@example.com" },
+                    "user_name": { "S": "Charlie Brown" },
+                    "user_contact": { "S": "+1-555-0103" },
+                    "age": { "N": "22" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-03-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "diana.prince@example.com" },
+                    "user_name": { "S": "Diana Prince" },
+                    "user_contact": { "S": "+1-555-0104" },
+                    "age": { "N": "30" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-04-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "ethan.hunt@example.com" },
+                    "user_name": { "S": "Ethan Hunt" },
+                    "user_contact": { "S": "+1-555-0105" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-05-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "fiona.gallagher@example.com" },
+                    "user_name": { "S": "Fiona Gallagher" },
+                    "user_contact": { "S": "+1-555-0106" },
+                    "age": { "N": "27" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-06-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "george.costanza@example.com" },
+                    "user_name": { "S": "George Costanza" },
+                    "user_contact": { "S": "+1-555-0107" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-07-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "hannah.baker@example.com" },
+                    "user_name": { "S": "Hannah Baker" },
+                    "user_contact": { "S": "+1-555-0108" },
+                    "age": { "N": "19" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-08-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "ian.malcolm@example.com" },
+                    "user_name": { "S": "Ian Malcolm" },
+                    "user_contact": { "S": "+1-555-0109" },
+                    "age": { "N": "45" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-09-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "jessica.jones@example.com" },
+                    "user_name": { "S": "Jessica Jones" },
+                    "user_contact": { "S": "+1-555-0110" },
+                    "age": { "N": "32" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-10-01" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "kevin.hart@example.com" },
+                    "user_name": { "S": "Kevin Hart" },
+                    "user_contact": { "S": "+1-555-0111" },
+                    "age": { "N": "36" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-11-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "laura.croft@example.com" },
+                    "user_name": { "S": "Laura Croft" },
+                    "user_contact": { "S": "+1-555-0112" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-12-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "michael.scott@example.com" },
+                    "user_name": { "S": "Michael Scott" },
+                    "user_contact": { "S": "+1-555-0113" },
+                    "age": { "N": "42" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-01-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "nina.williams@example.com" },
+                    "user_name": { "S": "Nina Williams" },
+                    "user_contact": { "S": "+1-555-0114" },
+                    "age": { "N": "31" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-02-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "oliver.queen@example.com" },
+                    "user_name": { "S": "Oliver Queen" },
+                    "user_contact": { "S": "+1-555-0115" },
+                    "age": { "N": "33" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-03-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "peter.parker@example.com" },
+                    "user_name": { "S": "Peter Parker" },
+                    "user_contact": { "S": "+1-555-0116" },
+                    "age": { "N": "25" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-04-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "quinn.fabray@example.com" },
+                    "user_name": { "S": "Quinn Fabray" },
+                    "user_contact": { "S": "+1-555-0117" },
+                    "age": { "N": "27" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-05-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "ron.weasley@example.com" },
+                    "user_name": { "S": "Ron Weasley" },
+                    "user_contact": { "S": "+1-555-0118" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-06-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "samantha.carter@example.com" },
+                    "user_name": { "S": "Samantha Carter" },
+                    "user_contact": { "S": "+1-555-0119" },
+                    "age": { "N": "33" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-07-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "tony.stark@example.com" },
+                    "user_name": { "S": "Tony Stark" },
+                    "user_contact": { "S": "+1-555-0120" },
+                    "age": { "N": "45" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-08-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "uma.thurman@example.com" },
+                    "user_name": { "S": "Uma Thurman" },
+                    "user_contact": { "S": "+1-555-0121" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-09-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "vin.diesel@example.com" },
+                    "user_name": { "S": "Vin Diesel" },
+                    "user_contact": { "S": "+1-555-0122" },
+                    "age": { "N": "53" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-10-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "will.smith@example.com" },
+                    "user_name": { "S": "Will Smith" },
+                    "user_contact": { "S": "+1-555-0123" },
+                    "age": { "N": "52" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-11-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "xander.harris@example.com" },
+                    "user_name": { "S": "Xander Harris" },
+                    "user_contact": { "S": "+1-555-0124" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-12-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "yara.martell@example.com" },
+                    "user_name": { "S": "Yara Martell" },
+                    "user_contact": { "S": "+1-555-0125" },
+                    "age": { "N": "31" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-01-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "zachary.taylor@example.com" },
+                    "user_name": { "S": "Zachary Taylor" },
+                    "user_contact": { "S": "+1-555-0126" },
+                    "age": { "N": "37" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-02-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "amanda.waller@example.com" },
+                    "user_name": { "S": "Amanda Waller" },
+                    "user_contact": { "S": "+1-555-0127" },
+                    "age": { "N": "45" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-03-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "bruce.wayne@example.com" },
+                    "user_name": { "S": "Bruce Wayne" },
+                    "user_contact": { "S": "+1-555-0128" },
+                    "age": { "N": "38" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-04-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "clark.kent@example.com" },
+                    "user_name": { "S": "Clark Kent" },
+                    "user_contact": { "S": "+1-555-0129" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-05-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "diana.prince@example.com" },
+                    "user_name": { "S": "Diana Prince" },
+                    "user_contact": { "S": "+1-555-0130" },
+                    "age": { "N": "30" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-06-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "ella.wood@example.com" },
+                    "user_name": { "S": "Ella Wood" },
+                    "user_contact": { "S": "+1-555-0131" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-07-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "frank.castle@example.com" },
+                    "user_name": { "S": "Frank Castle" },
+                    "user_contact": { "S": "+1-555-0132" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-08-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "gwen.stacy@example.com" },
+                    "user_name": { "S": "Gwen Stacy" },
+                    "user_contact": { "S": "+1-555-0133" },
+                    "age": { "N": "26" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-09-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "harry.potter@example.com" },
+                    "user_name": { "S": "Harry Potter" },
+                    "user_contact": { "S": "+1-555-0134" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-10-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "iris.west@example.com" },
+                    "user_name": { "S": "Iris West" },
+                    "user_contact": { "S": "+1-555-0135" },
+                    "age": { "N": "32" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-11-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "jack.sparrow@example.com" },
+                    "user_name": { "S": "Jack Sparrow" },
+                    "user_contact": { "S": "+1-555-0136" },
+                    "age": { "N": "45" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-12-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "katherine.pratt@example.com" },
+                    "user_name": { "S": "Katherine Pratt" },
+                    "user_contact": { "S": "+1-555-0137" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-01-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "luke.skywalker@example.com" },
+                    "user_name": { "S": "Luke Skywalker" },
+                    "user_contact": { "S": "+1-555-0138" },
+                    "age": { "N": "35" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-02-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "marty.mcfly@example.com" },
+                    "user_name": { "S": "Marty McFly" },
+                    "user_contact": { "S": "+1-555-0139" },
+                    "age": { "N": "30" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-03-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "natalie.portman@example.com" },
+                    "user_name": { "S": "Natalie Portman" },
+                    "user_contact": { "S": "+1-555-0140" },
+                    "age": { "N": "38" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-04-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "olivia.benson@example.com" },
+                    "user_name": { "S": "Olivia Benson" },
+                    "user_contact": { "S": "+1-555-0141" },
+                    "age": { "N": "34" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-05-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "penny.wisdom@example.com" },
+                    "user_name": { "S": "Penny Wisdom" },
+                    "user_contact": { "S": "+1-555-0142" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-06-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "quinn.martin@example.com" },
+                    "user_name": { "S": "Quinn Martin" },
+                    "user_contact": { "S": "+1-555-0143" },
+                    "age": { "N": "31" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-07-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "rachel.green@example.com" },
+                    "user_name": { "S": "Rachel Green" },
+                    "user_contact": { "S": "+1-555-0144" },
+                    "age": { "N": "36" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-08-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "steve.rogers@example.com" },
+                    "user_name": { "S": "Steve Rogers" },
+                    "user_contact": { "S": "+1-555-0145" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-09-15" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "tony.stark@example.com" },
+                    "user_name": { "S": "Tony Stark" },
+                    "user_contact": { "S": "+1-555-0146" },
+                    "age": { "N": "45" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-10-20" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "uma.thurman@example.com" },
+                    "user_name": { "S": "Uma Thurman" },
+                    "user_contact": { "S": "+1-555-0147" },
+                    "age": { "N": "40" },
+                    "gender": { "S": "female" },
+                    "registration_date": { "S": "2023-11-25" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "vin.diesel@example.com" },
+                    "user_name": { "S": "Vin Diesel" },
+                    "user_contact": { "S": "+1-555-0148" },
+                    "age": { "N": "53" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-12-30" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "will.smith@example.com" },
+                    "user_name": { "S": "Will Smith" },
+                    "user_contact": { "S": "+1-555-0149" },
+                    "age": { "N": "52" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-01-05" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "user_email": { "S": "xander.harris@example.com" },
+                    "user_name": { "S": "Xander Harris" },
+                    "user_contact": { "S": "+1-555-0150" },
+                    "age": { "N": "29" },
+                    "gender": { "S": "male" },
+                    "registration_date": { "S": "2023-02-10" },
+                    "is_active": { "BOOL": true }
+                }
+            }
+        }
+    ]
+}
