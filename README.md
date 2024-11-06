@@ -2,7 +2,7 @@
 <details>
 <summary>Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용</summary>
 
-- [x] 1. ~~IT 서비스 유형에 따른  AWS 서비스들~~
+- [x] 1. [~~IT 서비스 유형에 따른  AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-services-by-IT-service-type)
 - [x] 2. ~~MSA 구현 방식에 따른  AWS 서비스들~~
 - [x] 3. ~~Managed 기준에 따른 AWS 서비스들~~
 - [x] 4. ~~On Demand 기준에 따른 AWS 서비스들~~
