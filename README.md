@@ -5,11 +5,11 @@
         
     - Sample Data Jsons
         
-        [userstable.json](https://github.com/andle7/Labs-DevOps-AWS-prac/blob/DynamoDB/Sample%20Data%20Jsons/users-50ea.json)
+        [userstable.json](https://github.com/andle7/Labs-DevOps-AWS-prac/blob/DynamoDB/Sample%20Data%20Jsons/userstable.json)
         
-        [users.json](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/55b09510-e97e-4c7b-9fa3-ed22d61c64b3/users.json)
+        [users.json](https://github.com/andle7/Labs-DevOps-AWS-prac/blob/DynamoDB/Sample%20Data%20Jsons/users.json)
         
-        [users-50ea.json](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/28ca654e-557c-431d-b5e3-9ebab61efdba/users-50ea.json)
+        [users-50ea.json](https://github.com/andle7/Labs-DevOps-AWS-prac/blob/DynamoDB/Sample%20Data%20Jsons/users-50ea.json)
         
     - Test Steps with AWS CLIs
         
