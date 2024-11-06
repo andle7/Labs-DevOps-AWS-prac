@@ -46,13 +46,15 @@
 ---
 
 아래 (참조)로 표기된 내용들은 현업 실무자들에* 게는 기본적인 개념들이며, (Lab)으로 표기된 내용들은 여러분들이 DevOps 과정에서 필수로 습득해야하는 내용들을 node.js version 20.x esm 모듈 방식으로 구현한 예시들이므로 조별, 개인별로 실습해보시며 여러분들이 목표로하는 프로젝트 수행의 기본 역량들을 갖추어가길 바랍니다.
----
-DevOps 필수 개념들
----
-여러분들이 교육 과정에서 경험한 내용들을 본인 이력서에 기술할 시 면접관이 여러분에게 궁금해할만한 질문지들을 표기해 두었습니다.  남은 프로젝트 수행 기간동안 기본 개념들을 반복을 통해 내재화하는데 집중하시기 바랍니다  !
 
 
+<details>
+<summary>DevOps 필수 개념들</summary>
 
+여러분들이 교육 과정에서 경험한 내용들을 본인 이력서에 기술할 시 면접관이 여러분에게 궁금해할만한 질문지들을 표기해 두었습니다.  남은 프로젝트 수행 기간동안 기본 개념들을 반복을 통해 내재화하는데 집중하시기 바랍니다  !</br></br>
+
+
+</details>
 
 
 
@@ -62,23 +64,14 @@ DevOps 필수 개념들
 <summary>Labs - 웹 서비스 개발</summary>
 면접 시 가장 자신감 있게 답을 할 수 있는 기본기는 직접 경험을 통해 다양한 생각들과 토론을 겪음에서 생겨납니다.  아래 Lab을 통해 개인 또는 조별로 경험해보고 각 조 프로젝트에 활용할 수 있는지를 조별로 검토해보시길 바랍니다 !  Java로 프로젝트를 진행하는 조는 Lab은 Skip하고 참고 내용들만 숙독하시기 바랍니다 !</br></br>
 
-- [ ] 1. (Lab) To Do Service 구현 - Simple MSA
+- [ ] 1. (참조) 웹 서비스 개발
 - [ ] 2. (참조) ES 모듈 (EMAScript 모듈)
-- [ ] 3. (Lab) To Do Service 구현 - Login 추가
-- [ ] 4. (참고) 웹 서비스 인증 방식 - Cookie vs Session vs JWT
-- [ ] 5. (참고) 웹 서비스 인증 모듈 - Passport 사용 인증
-- [ ] 6. (Lab) To Do Service 구현 - Login에 JWT 보안 적용
-- [ ] 7. (Lab) To Do Service 구현 - Login에 Google Login 적용
-- [ ] 8. (Lab) To Do Service 구현 - Login + Monitoring
-- [ ] 9. (Lab) To Do Service 구현 - Login + Monitoring + Logging + .env
-- [ ] 10. (Lab) To Do Service 구현 - Frontend
-- [ ] 11. (Lab) To Do Service 구현 - CORS 문제 해결
-- [ ] 12. (참조) 웹 서비스에서의 CORS 보안
-- [ ] 13. (Lab) To Do Service 구현 - Login + Monitoring + .env +  Logging to AWS DynamoDB
-- [ ] 14. (Lab) To Do Service 구현 - DynamoDB Table Frontend with AWS Config Login
-- [ ] 15. (참고) AWS Cognito
-- [ ] 16. (Lab) To Do Service 구현 - DynamoDB Table Frontend with Cognito Login
-
+- [ ] 3. (참조) MSA(Microservice Architecture)
+- [ ] 4. (참조) MSA Framework - 프로그래밍 언어 별
+- [ ] 5. (참조) MSA - 웹 서비스 Frameworks
+- [ ] 6. (참조) MSA 구현 및 배포 방식별 비교 - Container vs Serverless
+- [ ] 7. (참조) MSA 구현 기술별 AWS 서비스
+- [ ] 8. (참조) 웹 서비스/MSA 개발 보안
 
 
 </details>
