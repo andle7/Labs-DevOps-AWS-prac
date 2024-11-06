@@ -1,7 +1,7 @@
 - (Lab) DynamoDB
     - Lambda (node.js 20.x)
         
-        [lambda.zip](https://prod-files-secure.s3.us-west-2.amazonaws.com/4867283b-055f-4e0a-8423-1c7cec790276/60355d9e-d724-465f-813a-8c56f1b00226/lambda.zip)
+        [lambda.zip](https://github.com/andle7/Labs-DevOps-AWS-prac/raw/refs/heads/DynamoDB/Lambda%20(node.js%2020.x)/lambda.zip)
         
     - Sample Data Jsons
         
