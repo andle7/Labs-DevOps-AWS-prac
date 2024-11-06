@@ -57,9 +57,36 @@ DevOps 필수 개념들
 
 
 
+
+<details>
+<summary>Labs - 웹 서비스 개발</summary>
+면접 시 가장 자신감 있게 답을 할 수 있는 기본기는 직접 경험을 통해 다양한 생각들과 토론을 겪음에서 생겨납니다.  아래 Lab을 통해 개인 또는 조별로 경험해보고 각 조 프로젝트에 활용할 수 있는지를 조별로 검토해보시길 바랍니다 !  Java로 프로젝트를 진행하는 조는 Lab은 Skip하고 참고 내용들만 숙독하시기 바랍니다 !</br></br>
+
+- [ ] 1. (Lab) To Do Service 구현 - Simple MSA
+- [ ] 2. (참조) ES 모듈 (EMAScript 모듈)
+- [ ] 3. (Lab) To Do Service 구현 - Login 추가
+- [ ] 4. (참고) 웹 서비스 인증 방식 - Cookie vs Session vs JWT
+- [ ] 5. (참고) 웹 서비스 인증 모듈 - Passport 사용 인증
+- [ ] 6. (Lab) To Do Service 구현 - Login에 JWT 보안 적용
+- [ ] 7. (Lab) To Do Service 구현 - Login에 Google Login 적용
+- [ ] 8. (Lab) To Do Service 구현 - Login + Monitoring
+- [ ] 9. (Lab) To Do Service 구현 - Login + Monitoring + Logging + .env
+- [ ] 10. (Lab) To Do Service 구현 - Frontend
+- [ ] 11. (Lab) To Do Service 구현 - CORS 문제 해결
+- [ ] 12. (참조) 웹 서비스에서의 CORS 보안
+- [ ] 13. (Lab) To Do Service 구현 - Login + Monitoring + .env +  Logging to AWS DynamoDB
+- [ ] 14. (Lab) To Do Service 구현 - DynamoDB Table Frontend with AWS Config Login
+- [ ] 15. (참고) AWS Cognito
+- [ ] 16. (Lab) To Do Service 구현 - DynamoDB Table Frontend with Cognito Login
+
+
+
+</details>
+
+
 <details>
 <summary>Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용</summary>
-취업 시 단순 프로그래머 지원이 아닌 DevOps로 지원을 염두해 둔다면 아래 AWS 핵심 서비스들에 대한 숙지가 매우 중요합니다 !  취업 경쟁력을 높이기 위해서는 본인 역량과 정체성을 DevOps로 목표를 설정해두고 옵션으로 프로그래머로서도 역량을 끌어올리는 것이 취업에 매우 좋은 전략이라고 생각됩니다 !  참고로 시장에서 DevOps 경력자들은 단순 프로그래머 경력자들 보다 같은 경력 기간 시 더 높은 연봉과 처우를 받고 있습니다. </br>
+취업 시 단순 프로그래머 지원이 아닌 DevOps로 지원을 염두해 둔다면 아래 AWS 핵심 서비스들에 대한 숙지가 매우 중요합니다 !  취업 경쟁력을 높이기 위해서는 본인 역량과 정체성을 DevOps로 목표를 설정해두고 옵션으로 프로그래머로서도 역량을 끌어올리는 것이 취업에 매우 좋은 전략이라고 생각됩니다 !  참고로 시장에서 DevOps 경력자들은 단순 프로그래머 경력자들 보다 같은 경력 기간 시 더 높은 연봉과 처우를 받고 있습니다. </br></br>
     
 - [x] 1. [~~IT 서비스 유형에 따른  AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-services-by-IT-service-type)
 - [x] 2. [~~MSA 구현 방식에 따른  AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-Services-According-to-MSA-Implementation-Method)
