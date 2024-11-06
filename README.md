@@ -15,7 +15,7 @@ Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용
 - [ ] 12. ~~프로그래밍 언어별 Lambda 구현 예시~~
 - [ ] 13. ~~Infra as a Code (IaC)~~
 - [ ] 14. ~~Container Basic - ECS, ECR~~
-- [ ] 15. Serverless Basic - Lambda, API Gateway, DynamoDB
+- [ ] 15. ~~Serverless Basic - Lambda, API Gateway, DynamoDB~~
 - [ ] 16. DynamoDB
 - [x] 17. ~~Serverless To Do Service 구현 - Lambda, API Gateway~~
 - [x] 18. ~~Serverless To Do Service에 IaC 적용 - Serverless Framework~~
