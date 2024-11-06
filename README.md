@@ -60,6 +60,7 @@ DevOps 필수 개념들
 <details>
 <summary>Labs - 웹 서비스 개발/DevOps에 AWS 서비스 활용</summary>
 취업 시 단순 프로그래머 지원이 아닌 DevOps로 지원을 염두해 둔다면 아래 AWS 핵심 서비스들에 대한 숙지가 매우 중요합니다 !  취업 경쟁력을 높이기 위해서는 본인 역량과 정체성을 DevOps로 목표를 설정해두고 옵션으로 프로그래머로서도 역량을 끌어올리는 것이 취업에 매우 좋은 전략이라고 생각됩니다 !  참고로 시장에서 DevOps 경력자들은 단순 프로그래머 경력자들 보다 같은 경력 기간 시 더 높은 연봉과 처우를 받고 있습니다. </br>
+    
 - [x] 1. [~~IT 서비스 유형에 따른  AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-services-by-IT-service-type)
 - [x] 2. [~~MSA 구현 방식에 따른  AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-Services-According-to-MSA-Implementation-Method)
 - [x] 3. [~~Managed 기준에 따른 AWS 서비스들~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/AWS-services-according-to-Managed-criteria)
