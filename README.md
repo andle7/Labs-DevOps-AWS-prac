@@ -117,3 +117,31 @@
 - [x] 18. [~~Serverless To Do Service에 IaC 적용 - Serverless Framework~~](https://github.com/andle7/Labs-DevOps-AWS-prac/tree/Serverless-To-Do-Service-IaC-Serverless-Framework-mono-repo-prac)
 
 </details>
+
+
+<details>
+<summary>(Optional) 기획 Labs … 협의 용 </summary>
+여러분이 현재 진행 중인 프로젝트에 해당 사항이 있고 + 추후 개인 Portfolio에 도움이 될만한 단위 Labs 기획하고자 함.  조별 피드백 받아 선정 예정</br></br>
+
+- [ ] 1. (Lab) 게시판 구현 - S3 CRUD + Presigned URL 
+- [ ] 2. (Lab) Streaming 서비스 구현 - Kinesis
+- [ ] 3. (Lab) Multi Database 통합 UI 서비스 구현 - RDS & Aurora, DynamoDB, DocumentDB
+- [ ] 4. (Lab) 분석 서비스 구현 - S3 & Athena & Glue
+- [ ] 5. (Lab) 업무 Batch 서비스 구현 - SQS, Event Bridge, Step Functions
+
+</details>
+
+
+<details>
+<summary>(Optional) 기획 Labs - 웹 서비스  API 활용</summary>
+여러분이 현재 진행 중인 프로젝트에 해당 사항이 있고 + 추후 개인 Portfolio에 도움이 될만한 단위 Labs 기획하고자 함.  조별 피드백 받아 선정 예정</br></br>
+
+- [ ] 1. Google (Social Login, Gmail, Calendar 등)
+- [ ] 2. OpenAI (AI)
+- [ ] 3. Notion (관리)
+- [ ] 4. Slack (운영)
+
+</details>
+
+
+
